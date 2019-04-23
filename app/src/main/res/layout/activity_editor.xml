@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    tools:context=".EditorActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/product_overview"
+        android:textSize="30sp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"/>
+
+    <!-- Name field -->
+    <EditText
+        android:id="@+id/edit_product_name"
+        android:hint="@string/product_name_hint"
+        android:inputType="textCapWords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"/>
+    <!-- Price field -->
+    <EditText
+        android:id="@+id/edit_product_price"
+        android:hint="@string/product_price_hint"
+        android:layout_margin="5dp"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!-- Product field -->
+    <EditText
+        android:id="@+id/edit_product_quantity"
+        android:hint="@string/product_quantity_hint"
+        android:layout_margin="5dp"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!-- Supplier drop-down spinner -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/supplier_info"
+        android:textSize="30sp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"/>
+    <Spinner
+        android:id="@+id/spinner_product_supplier_name"
+        android:layout_height="50dp"
+        android:layout_width="100dp"
+        android:layout_margin="5dp"
+        android:spinnerMode="dropdown"
+        />
+
+    <!-- Supplier phone field -->
+    <EditText
+        android:id="@+id/edit_product_Supplier_phone"
+        android:hint="@string/product_supplier_phone_number_hint"
+        android:layout_margin="5dp"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>
